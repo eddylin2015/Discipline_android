@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+    <TextView android:text="@string/wrongtype" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <Spinner android:id="@+id/spinner1" android:layout_height="wrap_content" android:layout_width="match_parent"></Spinner>
+    <TextView android:text="@string/wrongclass" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        style="@array/SC1A_STUDENTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/SC1A_STUDENTS" >
+
+</Spinner>
+    <TextView android:text="@string/wrongstudcnt" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    <EditText android:id="@+id/editText1" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.49"
+        android:text="@string/hello" >
+</TextView>
+    <Button android:layout_height="wrap_content" android:text="@string/wrongsubmit" android:layout_width="86dp" android:id="@+id/button2"></Button>
+    <Button android:layout_height="wrap_content" android:text="@string/return_home" android:layout_width="wrap_content" android:id="@+id/button_ret0"></Button>
+    
+</LinearLayout>
